@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="NGUOI_DUNG" EntityType="AModel.NGUOI_DUNG" />
+    <EntitySet Name="NHAN_VIEN" EntityType="AModel.NHAN_VIEN" />
+    <EntitySet Name="NHOM_NGUOI_DUNG" EntityType="AModel.NHOM_NGUOI_DUNG" />
+    <EntitySet Name="NHOM_QUYEN_HAN" EntityType="AModel.NHOM_QUYEN_HAN" />
+    <EntitySet Name="TRUY_CAP" EntityType="AModel.TRUY_CAP" />
+    <AssociationSet Name="FK_NGUOI_DUNG_NHAN_VIEN" Association="AModel.FK_NGUOI_DUNG_NHAN_VIEN">
+      <End Role="NHAN_VIEN" EntitySet="NHAN_VIEN" />
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NGUOI_DUNG_NHOM_NGUOI_DUNG" Association="AModel.FK_NGUOI_DUNG_NHOM_NGUOI_DUNG">
+      <End Role="NHOM_NGUOI_DUNG" EntitySet="NHOM_NGUOI_DUNG" />
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRUY_CAP_NGUOI_DUNG" Association="AModel.FK_TRUY_CAP_NGUOI_DUNG">
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+      <End Role="TRUY_CAP" EntitySet="TRUY_CAP" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN" Association="AModel.FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN">
+      <End Role="NHOM_QUYEN_HAN" EntitySet="NHOM_QUYEN_HAN" />
+      <End Role="NHOM_NGUOI_DUNG" EntitySet="NHOM_NGUOI_DUNG" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="NGUOI_DUNG">
+    <Key>
+      <PropertyRef Name="IdND" />
+    </Key>
+    <Property Name="IdND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdNND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdNV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenND" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TenTK" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="PassWord" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="NgayTaoTK" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DanhmucTC" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="QuyenDM" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NHAN_VIEN" Relationship="AModel.FK_NGUOI_DUNG_NHAN_VIEN" FromRole="NGUOI_DUNG" ToRole="NHAN_VIEN" />
+    <NavigationProperty Name="NHOM_NGUOI_DUNG" Relationship="AModel.FK_NGUOI_DUNG_NHOM_NGUOI_DUNG" FromRole="NGUOI_DUNG" ToRole="NHOM_NGUOI_DUNG" />
+    <NavigationProperty Name="TRUY_CAP" Relationship="AModel.FK_TRUY_CAP_NGUOI_DUNG" FromRole="NGUOI_DUNG" ToRole="TRUY_CAP" />
+  </EntityType>
+  <EntityType Name="NHAN_VIEN">
+    <Key>
+      <PropertyRef Name="IdNV" />
+    </Key>
+    <Property Name="IdNV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenNV" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NgaySinh" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Gioitinh" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Diachi" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SĐT" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Chucvu" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Taikhoan" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="NGUOI_DUNG" Relationship="AModel.FK_NGUOI_DUNG_NHAN_VIEN" FromRole="NHAN_VIEN" ToRole="NGUOI_DUNG" />
+  </EntityType>
+  <EntityType Name="NHOM_NGUOI_DUNG">
+    <Key>
+      <PropertyRef Name="IdNND" />
+    </Key>
+    <Property Name="IdNND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdNhomQH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenNND" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MoTaNND" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NGUOI_DUNG" Relationship="AModel.FK_NGUOI_DUNG_NHOM_NGUOI_DUNG" FromRole="NHOM_NGUOI_DUNG" ToRole="NGUOI_DUNG" />
+    <NavigationProperty Name="NHOM_QUYEN_HAN" Relationship="AModel.FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN" FromRole="NHOM_NGUOI_DUNG" ToRole="NHOM_QUYEN_HAN" />
+  </EntityType>
+  <EntityType Name="NHOM_QUYEN_HAN">
+    <Key>
+      <PropertyRef Name="IdNQH" />
+    </Key>
+    <Property Name="IdNQH" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenNQH" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="MoTa" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="DanhmucTC" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="QuyenDM" Type="String" Nullable="false" MaxLength="500" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NHOM_NGUOI_DUNG" Relationship="AModel.FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN" FromRole="NHOM_QUYEN_HAN" ToRole="NHOM_NGUOI_DUNG" />
+  </EntityType>
+  <EntityType Name="TRUY_CAP">
+    <Key>
+      <PropertyRef Name="IdTC" />
+    </Key>
+    <Property Name="IdTC" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IdND" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="TenTK" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LanDMKCuoi" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="LanDNCuoi" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="DanhmucTC" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="Thaotac" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="NGUOI_DUNG" Relationship="AModel.FK_TRUY_CAP_NGUOI_DUNG" FromRole="TRUY_CAP" ToRole="NGUOI_DUNG" />
+  </EntityType>
+  <Association Name="FK_NGUOI_DUNG_NHAN_VIEN">
+    <End Type="AModel.NHAN_VIEN" Role="NHAN_VIEN" Multiplicity="1" />
+    <End Type="AModel.NGUOI_DUNG" Role="NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHAN_VIEN">
+        <PropertyRef Name="IdNV" />
+      </Principal>
+      <Dependent Role="NGUOI_DUNG">
+        <PropertyRef Name="IdNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NGUOI_DUNG_NHOM_NGUOI_DUNG">
+    <End Type="AModel.NHOM_NGUOI_DUNG" Role="NHOM_NGUOI_DUNG" Multiplicity="1" />
+    <End Type="AModel.NGUOI_DUNG" Role="NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOM_NGUOI_DUNG">
+        <PropertyRef Name="IdNND" />
+      </Principal>
+      <Dependent Role="NGUOI_DUNG">
+        <PropertyRef Name="IdNND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRUY_CAP_NGUOI_DUNG">
+    <End Type="AModel.NGUOI_DUNG" Role="NGUOI_DUNG" Multiplicity="1" />
+    <End Type="AModel.TRUY_CAP" Role="TRUY_CAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOI_DUNG">
+        <PropertyRef Name="IdND" />
+      </Principal>
+      <Dependent Role="TRUY_CAP">
+        <PropertyRef Name="IdND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN">
+    <End Type="AModel.NHOM_QUYEN_HAN" Role="NHOM_QUYEN_HAN" Multiplicity="1" />
+    <End Type="AModel.NHOM_NGUOI_DUNG" Role="NHOM_NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOM_QUYEN_HAN">
+        <PropertyRef Name="IdNQH" />
+      </Principal>
+      <Dependent Role="NHOM_NGUOI_DUNG">
+        <PropertyRef Name="IdNhomQH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

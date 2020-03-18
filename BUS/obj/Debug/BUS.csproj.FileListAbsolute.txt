@@ -1,0 +1,10 @@
+F:\PhanQuyen\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+F:\PhanQuyen\BUS\obj\Debug\BUS.csproj.CoreCompileInputs.cache
+F:\PhanQuyen\BUS\bin\Debug\BUS.dll
+F:\PhanQuyen\BUS\bin\Debug\BUS.pdb
+F:\PhanQuyen\BUS\bin\Debug\DAO.dll
+F:\PhanQuyen\BUS\bin\Debug\DTO.dll
+F:\PhanQuyen\BUS\bin\Debug\DAO.pdb
+F:\PhanQuyen\BUS\bin\Debug\DTO.pdb
+F:\PhanQuyen\BUS\obj\Debug\BUS.dll
+F:\PhanQuyen\BUS\obj\Debug\BUS.pdb

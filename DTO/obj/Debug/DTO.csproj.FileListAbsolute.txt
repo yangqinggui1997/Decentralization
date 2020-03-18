@@ -1,0 +1,6 @@
+F:\PhanQuyen\DTO\bin\Debug\DTO.dll
+F:\PhanQuyen\DTO\bin\Debug\DTO.pdb
+F:\PhanQuyen\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+F:\PhanQuyen\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\PhanQuyen\DTO\obj\Debug\DTO.dll
+F:\PhanQuyen\DTO\obj\Debug\DTO.pdb

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="NGUOI_DUNG">
+      <EntityTypeMapping TypeName="AModel.NGUOI_DUNG">
+        <MappingFragment StoreEntitySet="NGUOI_DUNG">
+          <ScalarProperty Name="QuyenDM" ColumnName="QuyenDM" />
+          <ScalarProperty Name="DanhmucTC" ColumnName="DanhmucTC" />
+          <ScalarProperty Name="NgayTaoTK" ColumnName="NgayTaoTK" />
+          <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+          <ScalarProperty Name="TenTK" ColumnName="TenTK" />
+          <ScalarProperty Name="TenND" ColumnName="TenND" />
+          <ScalarProperty Name="IdNV" ColumnName="IdNV" />
+          <ScalarProperty Name="IdNND" ColumnName="IdNND" />
+          <ScalarProperty Name="IdND" ColumnName="IdND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHAN_VIEN">
+      <EntityTypeMapping TypeName="AModel.NHAN_VIEN">
+        <MappingFragment StoreEntitySet="NHAN_VIEN">
+          <ScalarProperty Name="Taikhoan" ColumnName="Taikhoan" />
+          <ScalarProperty Name="Chucvu" ColumnName="Chucvu" />
+          <ScalarProperty Name="SĐT" ColumnName="SĐT" />
+          <ScalarProperty Name="Diachi" ColumnName="Diachi" />
+          <ScalarProperty Name="Gioitinh" ColumnName="Gioitinh" />
+          <ScalarProperty Name="NgaySinh" ColumnName="NgaySinh" />
+          <ScalarProperty Name="TenNV" ColumnName="TenNV" />
+          <ScalarProperty Name="IdNV" ColumnName="IdNV" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHOM_NGUOI_DUNG">
+      <EntityTypeMapping TypeName="AModel.NHOM_NGUOI_DUNG">
+        <MappingFragment StoreEntitySet="NHOM_NGUOI_DUNG">
+          <ScalarProperty Name="MoTaNND" ColumnName="MoTaNND" />
+          <ScalarProperty Name="TenNND" ColumnName="TenNND" />
+          <ScalarProperty Name="IdNhomQH" ColumnName="IdNhomQH" />
+          <ScalarProperty Name="IdNND" ColumnName="IdNND" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NHOM_QUYEN_HAN">
+      <EntityTypeMapping TypeName="AModel.NHOM_QUYEN_HAN">
+        <MappingFragment StoreEntitySet="NHOM_QUYEN_HAN">
+          <ScalarProperty Name="QuyenDM" ColumnName="QuyenDM" />
+          <ScalarProperty Name="DanhmucTC" ColumnName="DanhmucTC" />
+          <ScalarProperty Name="MoTa" ColumnName="MoTa" />
+          <ScalarProperty Name="TenNQH" ColumnName="TenNQH" />
+          <ScalarProperty Name="IdNQH" ColumnName="IdNQH" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TRUY_CAP">
+      <EntityTypeMapping TypeName="AModel.TRUY_CAP">
+        <MappingFragment StoreEntitySet="TRUY_CAP">
+          <ScalarProperty Name="Thaotac" ColumnName="Thaotac" />
+          <ScalarProperty Name="DanhmucTC" ColumnName="DanhmucTC" />
+          <ScalarProperty Name="LanDNCuoi" ColumnName="LanDNCuoi" />
+          <ScalarProperty Name="LanDMKCuoi" ColumnName="LanDMKCuoi" />
+          <ScalarProperty Name="TenTK" ColumnName="TenTK" />
+          <ScalarProperty Name="IdND" ColumnName="IdND" />
+          <ScalarProperty Name="IdTC" ColumnName="IdTC" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

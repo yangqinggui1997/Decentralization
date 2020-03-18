@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NGUOI_DUNG">
+    <Key>
+      <PropertyRef Name="IdND" />
+    </Key>
+    <Property Name="IdND" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdNND" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdNV" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenND" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TenTK" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="PassWord" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="NgayTaoTK" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DanhmucTC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="QuyenDM" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NHAN_VIEN">
+    <Key>
+      <PropertyRef Name="IdNV" />
+    </Key>
+    <Property Name="IdNV" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNV" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NgaySinh" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gioitinh" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Diachi" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="SĐT" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Chucvu" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Taikhoan" Type="varchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="NHOM_NGUOI_DUNG">
+    <Key>
+      <PropertyRef Name="IdNND" />
+    </Key>
+    <Property Name="IdNND" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdNhomQH" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNND" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MoTaNND" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="NHOM_QUYEN_HAN">
+    <Key>
+      <PropertyRef Name="IdNQH" />
+    </Key>
+    <Property Name="IdNQH" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenNQH" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="MoTa" Type="nvarchar" MaxLength="500" />
+    <Property Name="DanhmucTC" Type="nvarchar" MaxLength="500" Nullable="false" />
+    <Property Name="QuyenDM" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TRUY_CAP">
+    <Key>
+      <PropertyRef Name="IdTC" />
+    </Key>
+    <Property Name="IdTC" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="IdND" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="TenTK" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="LanDMKCuoi" Type="varchar" MaxLength="100" />
+    <Property Name="LanDNCuoi" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="DanhmucTC" Type="nvarchar" MaxLength="500" />
+    <Property Name="Thaotac" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <Association Name="FK_NGUOI_DUNG_NHAN_VIEN">
+    <End Role="NHAN_VIEN" Type="Self.NHAN_VIEN" Multiplicity="1" />
+    <End Role="NGUOI_DUNG" Type="Self.NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHAN_VIEN">
+        <PropertyRef Name="IdNV" />
+      </Principal>
+      <Dependent Role="NGUOI_DUNG">
+        <PropertyRef Name="IdNV" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NGUOI_DUNG_NHOM_NGUOI_DUNG">
+    <End Role="NHOM_NGUOI_DUNG" Type="Self.NHOM_NGUOI_DUNG" Multiplicity="1" />
+    <End Role="NGUOI_DUNG" Type="Self.NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOM_NGUOI_DUNG">
+        <PropertyRef Name="IdNND" />
+      </Principal>
+      <Dependent Role="NGUOI_DUNG">
+        <PropertyRef Name="IdNND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN">
+    <End Role="NHOM_QUYEN_HAN" Type="Self.NHOM_QUYEN_HAN" Multiplicity="1" />
+    <End Role="NHOM_NGUOI_DUNG" Type="Self.NHOM_NGUOI_DUNG" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NHOM_QUYEN_HAN">
+        <PropertyRef Name="IdNQH" />
+      </Principal>
+      <Dependent Role="NHOM_NGUOI_DUNG">
+        <PropertyRef Name="IdNhomQH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TRUY_CAP_NGUOI_DUNG">
+    <End Role="NGUOI_DUNG" Type="Self.NGUOI_DUNG" Multiplicity="1" />
+    <End Role="TRUY_CAP" Type="Self.TRUY_CAP" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NGUOI_DUNG">
+        <PropertyRef Name="IdND" />
+      </Principal>
+      <Dependent Role="TRUY_CAP">
+        <PropertyRef Name="IdND" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AModelStoreContainer">
+    <EntitySet Name="NGUOI_DUNG" EntityType="Self.NGUOI_DUNG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHAN_VIEN" EntityType="Self.NHAN_VIEN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHOM_NGUOI_DUNG" EntityType="Self.NHOM_NGUOI_DUNG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NHOM_QUYEN_HAN" EntityType="Self.NHOM_QUYEN_HAN" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TRUY_CAP" EntityType="Self.TRUY_CAP" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_NGUOI_DUNG_NHAN_VIEN" Association="Self.FK_NGUOI_DUNG_NHAN_VIEN">
+      <End Role="NHAN_VIEN" EntitySet="NHAN_VIEN" />
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NGUOI_DUNG_NHOM_NGUOI_DUNG" Association="Self.FK_NGUOI_DUNG_NHOM_NGUOI_DUNG">
+      <End Role="NHOM_NGUOI_DUNG" EntitySet="NHOM_NGUOI_DUNG" />
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN" Association="Self.FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN">
+      <End Role="NHOM_QUYEN_HAN" EntitySet="NHOM_QUYEN_HAN" />
+      <End Role="NHOM_NGUOI_DUNG" EntitySet="NHOM_NGUOI_DUNG" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TRUY_CAP_NGUOI_DUNG" Association="Self.FK_TRUY_CAP_NGUOI_DUNG">
+      <End Role="NGUOI_DUNG" EntitySet="NGUOI_DUNG" />
+      <End Role="TRUY_CAP" EntitySet="TRUY_CAP" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

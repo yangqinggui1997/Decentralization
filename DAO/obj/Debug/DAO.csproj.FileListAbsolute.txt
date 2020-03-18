@@ -1,0 +1,8 @@
+F:\PhanQuyen\DAO\obj\Debug\DAO.csprojResolveAssemblyReference.cache
+F:\PhanQuyen\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+F:\PhanQuyen\DAO\bin\Debug\DAO.dll
+F:\PhanQuyen\DAO\bin\Debug\DAO.pdb
+F:\PhanQuyen\DAO\bin\Debug\DTO.dll
+F:\PhanQuyen\DAO\bin\Debug\DTO.pdb
+F:\PhanQuyen\DAO\obj\Debug\DAO.dll
+F:\PhanQuyen\DAO\obj\Debug\DAO.pdb

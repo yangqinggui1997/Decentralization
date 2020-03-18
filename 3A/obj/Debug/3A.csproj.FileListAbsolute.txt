@@ -1,0 +1,74 @@
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\3A.mdf
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\3A_log.ldf
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\3A.exe.config
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\3A.exe
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\3A.pdb
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\EntityFramework.dll
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\EntityFramework.SqlServer.dll
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\EntityFramework.xml
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\bin\Debug\EntityFramework.SqlServer.xml
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\3A.csprojResolveAssemblyReference.cache
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.CONGNO.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.DANGKY.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.DANGNHAP.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.DOANHTHU.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.DOI_MK.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.GIOITHIEU.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.HANGTON.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.HDBAN.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.HDNHAP.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.HUONGDAN.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.KHACHHANG.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.MAIN.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.NCU.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.NGUOIDUNG_QH.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.NHANVIEN.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.NHOMND_NHOMQH.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.Properties.Resources.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.QLTRUYCAP.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.SANPHAM.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\_3A.XEMQUYEN.resources
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\3A.csproj.GenerateResource.Cache
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\3A.csproj.CoreCompileInputs.cache
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\3A.exe
+F:\LẬP TRÌNH QUẢN LÝ\PhanQuyen\3A\obj\Debug\3A.pdb
+F:\PhanQuyen\3A\bin\Debug\3A.mdf
+F:\PhanQuyen\3A\bin\Debug\3A_log.ldf
+F:\PhanQuyen\3A\bin\Debug\3A.exe.config
+F:\PhanQuyen\3A\bin\Debug\3A.exe
+F:\PhanQuyen\3A\bin\Debug\3A.pdb
+F:\PhanQuyen\3A\bin\Debug\EntityFramework.dll
+F:\PhanQuyen\3A\bin\Debug\EntityFramework.SqlServer.dll
+F:\PhanQuyen\3A\bin\Debug\EntityFramework.xml
+F:\PhanQuyen\3A\bin\Debug\EntityFramework.SqlServer.xml
+F:\PhanQuyen\3A\obj\Debug\3A.csprojResolveAssemblyReference.cache
+F:\PhanQuyen\3A\obj\Debug\_3A.CONGNO.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.DANGKY.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.DANGNHAP.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.DOANHTHU.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.DOI_MK.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.GIOITHIEU.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.HANGTON.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.HDBAN.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.HDNHAP.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.HUONGDAN.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.KHACHHANG.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.MAIN.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.NCU.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.NGUOIDUNG_QH.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.NHANVIEN.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.NHOMND_NHOMQH.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.Properties.Resources.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.QLTRUYCAP.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.SANPHAM.resources
+F:\PhanQuyen\3A\obj\Debug\_3A.XEMQUYEN.resources
+F:\PhanQuyen\3A\obj\Debug\3A.csproj.GenerateResource.Cache
+F:\PhanQuyen\3A\obj\Debug\3A.csproj.CoreCompileInputs.cache
+F:\PhanQuyen\3A\obj\Debug\3A.exe
+F:\PhanQuyen\3A\obj\Debug\3A.pdb
+F:\PhanQuyen\3A\bin\Debug\BUS.dll
+F:\PhanQuyen\3A\bin\Debug\DTO.dll
+F:\PhanQuyen\3A\bin\Debug\DAO.dll
+F:\PhanQuyen\3A\bin\Debug\BUS.pdb
+F:\PhanQuyen\3A\bin\Debug\DTO.pdb
+F:\PhanQuyen\3A\bin\Debug\DAO.pdb

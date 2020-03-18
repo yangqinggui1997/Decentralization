@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5db08918ba37471087648ff1d7b400c6" Name="Diagram1" ZoomLevel="80">
+        <AssociationConnector Association="AModel.FK_NGUOI_DUNG_NHOM_QUYEN_HAN" />
+        <EntityTypeShape EntityType="AModel.NGUOI_DUNG" Width="1.875" PointX="5.625" PointY="0.5" />
+        <EntityTypeShape EntityType="AModel.NHAN_VIEN" Width="1.875" PointX="0.5" PointY="3" />
+        <EntityTypeShape EntityType="AModel.NHOM_NGUOI_DUNG" Width="1.75" PointX="3.125" PointY="0.5" />
+        <EntityTypeShape EntityType="AModel.NHOM_QUYEN_HAN" Width="1.875" PointX="0.5" PointY="0.5" />
+        <EntityTypeShape EntityType="AModel.TRUY_CAP" Width="1.875" PointX="8.375" PointY="0.5" />
+        <AssociationConnector Association="AModel.FK_NGUOI_DUNG_NHAN_VIEN" />
+        <AssociationConnector Association="AModel.FK_NGUOI_DUNG_NHOM_NGUOI_DUNG" />
+        <AssociationConnector Association="AModel.FK_TRUY_CAP_NGUOI_DUNG" />
+        <AssociationConnector Association="AModel.FK_NHOM_NGUOI_DUNG_NHOM_QUYEN_HAN" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
